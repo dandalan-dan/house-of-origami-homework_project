@@ -1,0 +1,1211 @@
+/* ---------- FONTS ---------- */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aubrey';
+  src: url('../fonts/Aubrey/Aubrey-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+/* ---------- GENERAL SETUP ---------- */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #ffffff;
+}
+
+
+/* ---------- NAV ---------- */
+.navbar {
+	padding: 32px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: white;
+	background-color: #D68189;
+	transition: all 0.2s ease;
+	border-radius: 10px;
+	display: inline-block;
+	padding: 14px 20px;
+	min-width: 80px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: .04em;
+}
+
+.nav-link:hover {
+	background-color: #E94E77;
+	transform: translateY(-3px);
+}
+
+
+/* ---------- HERO ---------- */
+.welcome {
+	padding: 40px 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.welcome .head-one {
+	font-family: 'Aubrey', serif;
+	font-size: 56px;
+	font-weight: 400;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.welcome p {
+	max-width: 1100px;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+/* ------------- ABOUT & LESSON HEADER 2 --------- */
+
+.aboutlesson-header {
+	background-color: #d0bdb3;
+	background-image: url("../images/bg-tile.jpg");
+	background-blend-mode: multiply;
+	background-repeat: repeat;
+	background-size: auto;
+	height: 120px;
+	width: 100%;
+	padding-left: 50px;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+.aboutlesson-header h2 {
+	color: white;
+	font-size: 60px;
+	font-weight: 350;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+	background-color: #C6A49A;
+	padding: 30px;
+	color: black;
+}
+
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-left {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.footer-logo {
+	height: 50px;
+}
+
+#details {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/* ---------- FEATURED LESSON SECTION ---------- */
+.featured-lessons {
+	padding: 60px 0;
+	background-color: #e6e6e6;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-feature-img {
+	width: 1100px;
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.container {
+	width: 1100px;
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.title-featured {
+	font-size: 25px;
+	letter-spacing: 0.2cm;
+	font-weight: 500;
+}
+
+.texpara {
+	margin: 10px 0 30px 0;
+	font-size: 18px;
+}
+
+/* Left Column */
+.spear-tailed {
+	flex: 6;
+}
+
+#spear-td {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+.lesson-desc {
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.lessons-label {
+	font-weight: 350;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#list-lessons {
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	padding-left: 40px;
+}
+
+/* Enroll Card */
+.enroll {
+	flex: 4;
+	background-color: #C6A49A;
+	padding: 40px 30px;
+	border-radius: 15px;
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#enroll-now {
+	font-size: 28px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.p-white-small {
+	color: white;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#dollar-25 {
+	width: 130px;
+	height: 130px;
+	border: 4px solid white;
+	border-radius: 50%;
+	margin: 0 auto 20px;
+	background-color: #EEEBE6;
+	font-size: 45px;
+	font-weight: bold;
+	color: #E94E77;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#dollar-sign {
+	font-size: 24px;
+	vertical-align: super;
+}
+
+.join-now {
+	display: inline-block;
+	background-color: #e94f77;
+	color: white;
+	padding: 15px 40px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: background-color 0.2s ease;
+}
+
+.join-now:hover {
+	background-color: black;
+}
+
+/* ---------- INFO BREAK ---------- */
+.info-break {
+	background-color: #ffffff;
+	padding: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.info-break .container {
+	display: block;
+}
+
+.info-break p {
+	font-size: 18px;
+	line-height: 1.8;
+	color: #555555;
+}
+
+/* ---------- ANIMAL CARDS INDEX ---------- */
+.animal-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px 0;
+	overflow-x: auto;
+}
+
+.title-masterclass {
+	font-size: 25px;
+	letter-spacing: 0.2cm;
+	font-weight: 400;
+}
+
+.animal {
+	padding: 20px;
+	background-color: white;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 300px;
+	flex-shrink: 0;
+}
+
+.animal-pic {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+.animal-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 12px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.animal-text {
+	color: black;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	text-align: left;
+	flex: 1;
+}
+
+.animal-text:last-of-type {
+	margin-bottom: 18px;
+}
+
+.stat {
+	padding: 5px 5px;
+	border-radius: 12px;
+	background-color: #E94E77;
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+}
+
+#skill-level {
+	color: black;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* ---------- ABOUT PAGE SPECIFIC ---------- */
+/* Origami Masters Section */
+.origami-masters {
+	background-color: #ffffff;
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-about {
+	font-size: 25px;
+	letter-spacing: 0.2cm;
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+
+.origami-masters-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.school-masters-title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.origami-masters-container {
+	max-width: 900px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 80px;
+	margin-bottom: 60px;
+}
+
+.origami-masters-container .master {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+
+.master img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+
+.master-name {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px 0 5px 0;
+}
+
+.master-era {
+	color: black;
+}
+
+/* School Masters Section */
+.school-masters {
+	background-color: #EEEBE6;
+	flex-wrap: wrap;
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.masters-container {
+	max-width: 1100px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 40px;
+	margin-top: 40px;
+}
+
+/* Left side Headmaster */
+.featured-master {
+	flex: 0 0 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-right: 220px;
+}
+
+.featured-master img {
+	width: 100%;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+
+.featured-master h3 {
+	font-size: 24px;
+	margin: 5px 0;
+}
+
+/* Right side grid of 4 masters */
+.masters-grid {
+	flex: 0 0 65%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.master-card {
+	flex: 0 0 calc(50% - 10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.master-card img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 15px;
+}
+
+.master-card h4 {
+	margin: 5px 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.master-card span {
+	color: black;
+	text-align: center;
+}
+
+/* ------------ LESSON PAGE SPECIFIC ------------- */
+.page-lessons {
+	padding: 60px 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10px;
+	padding: 20px;
+	overflow-x: auto;
+	flex-wrap: wrap;
+}
+
+#title-masterclasses {
+	font-size: 25px;
+	letter-spacing: 0.2cm;
+	font-weight: 400;
+}
+
+.animal-lesson {
+	padding: 20px;
+	background-color: #E3CFB4;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 290px;
+	flex-shrink: 0;
+	margin-right: 5px;
+}
+
+#video-title {
+	font-size: 25px;
+	letter-spacing: 0.2cm;
+	font-weight: 400;
+}
+
+.enroll-lesson {
+	padding: 12px 18px;
+	border-radius: 12px;
+	background-color: #E94F77;
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.05em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+}
+
+.enroll-lesson:hover {
+	background-color: black;
+}
+
+.video-lessons-container {
+	background-color: #EEEBE6;
+	padding: 60px 40px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.video-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+	padding: 20px 0;
+	flex-wrap: wrap;
+}
+
+.video-card {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 100%;
+	width: 400px;
+}
+
+.video-card iframe {
+	width: 100%;
+	height: 200px;
+	border: none;
+}
+
+.video-card h3 {
+	font-family: 'Roboto', sans-serif;
+	margin-top: 12px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* ------------ CONTACT PAGE SPECIFIC ------------- */
+.map-section {
+	width: 100%;
+	line-height: 0;
+}
+
+.map-section iframe {
+	width: 100%;
+	height: 380px;
+	border: none;
+	display: block;
+}
+
+.contact-body {
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	padding: 60px 80px 60px 40px;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.contact-title {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 24px;
+	letter-spacing: 0.03em;
+}
+
+/* Form */
+.contact-form-wrap {
+	flex: 0 0 auto;
+	width: 590px;
+}
+
+.form-row {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 18px;
+	gap: 16px;
+}
+
+.form-row label {
+	width: 90px;
+	min-width: 90px;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 8px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="number"],
+.form-row textarea {
+	width: 390px;
+	padding: 8px 12px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-color: #f5f0eb;
+	outline: none;
+	transition: border-color 0.2s;
+}
+
+.form-row select {
+	width: 200px;
+	padding: 8px 12px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-color: #f5f0eb;
+	outline: none;
+	transition: border-color 0.2s;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+	border-color: #D68189;
+}
+
+.form-row textarea {
+	height: 100px;
+	resize: vertical;
+}
+
+.radio-group,
+.checkbox-group {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.radio-group label,
+.checkbox-group label {
+	width: auto;
+	min-width: unset;
+	padding-top: 0;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+	accent-color: #E94E77;
+	width: 16px;
+	height: 16px;
+}
+
+.btn-send {
+	margin-top: 10px;
+	margin-left: 106px;
+	background-color: #E94E77;
+	color: white;
+	border: none;
+	padding: 14px 40px;
+	font-size: 17px;
+	font-weight: 700;
+	border-radius: 8px;
+	cursor: pointer;
+	letter-spacing: 0.05em;
+	transition: background-color 0.2s ease;
+}
+
+.btn-send:hover {
+	background-color: black;
+}
+
+/* HQ Info */
+.hq-wrap {
+	width: 280px;
+	min-width: 220px;
+	flex-shrink: 0;
+}
+
+.hq-address {
+	font-size: 15px;
+	line-height: 1.7;
+	margin-bottom: 14px;
+}
+
+.hq-info-row {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 6px;
+	font-size: 15px;
+	align-items: baseline;
+}
+
+.hq-info-row strong {
+	min-width: 50px;
+	font-weight: 700;
+}
+
+/* Social icons */
+.social-icons {
+	display: flex;
+	gap: 10px;
+	margin-top: 16px;
+	flex-wrap: wrap;
+}
+
+.social-icons a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border-radius: 10px;
+	background-color: #7e7e7e;
+	text-decoration: none;
+	transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+	background-color: #111111;
+	transform: translateY(-3px);
+}
+
+.social-icons a img {
+	width: 20px;
+	height: 20px;
+	object-fit: contain;
+}
+
+
+/* ========== MEDIA QUERY (360px to 428px) ============= */
+@media screen and (max-width: 428px) {
+
+	/* --- NAV --- */
+.navbar {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 12px 16px;
+	gap: 8px;
+	}
+
+.navbar > a {
+	flex: 1;
+	}
+
+.navbar img {
+	width: 160px;
+	}
+
+.nav-menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 8px;
+	padding-bottom: 10px;
+	}
+
+.nav-link {
+	font-size: 13px;
+	padding: 8px 10px;
+	min-width: 60px;
+	}
+
+	/* --- HERO (index) --- */
+.welcome {
+	padding: 24px 16px;
+	}
+
+.welcome .head-one {
+	font-size: 30px;
+	}
+
+.welcome p {
+	font-size: 14px;
+	line-height: 1.6;
+	}
+
+	/* --- FEATURED LESSON --- */
+.featured-lessons {
+	padding: 30px 16px;
+	}
+
+.title-featured,
+.title-masterclass {
+	font-size: 16px;
+	letter-spacing: 0.1cm;
+	}
+
+.texpara {
+	font-size: 14px;
+	}
+
+.main-feature-img {
+	width: 100%;
+	border-radius: 10px;
+	}
+
+.container {
+	width: 100%;
+	flex-direction: column;
+	gap: 20px;
+	padding: 0 16px;
+	}
+
+#spear-td {
+	font-size: 22px;
+	}
+
+.lesson-desc {
+	font-size: 14px;
+	}
+
+.lessons-label {
+	font-size: 16px;
+	}
+
+#list-lessons {
+	font-size: 14px;
+	}
+
+.enroll {
+	width: 100%;
+	margin-top: 0;
+	padding: 24px 16px;
+	}
+
+#enroll-now {
+	font-size: 22px;
+	}
+
+.p-white-small {
+	font-size: 14px;
+	}
+
+#dollar-25 {
+	width: 100px;
+	height: 100px;
+	font-size: 36px;
+	}
+
+.join-now {
+	font-size: 16px;
+	padding: 12px 28px;
+	}
+
+	/* --- INFO BREAK --- */
+.info-break {
+	padding: 24px 16px;
+	}
+
+.info-break p {
+	font-size: 13px;
+	line-height: 1.7;
+	}
+
+/* --- MASTERCLASS ANIMAL CARDS (index) --- */
+.master-class-section {
+	padding: 0 16px;
+	}
+
+.animal-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 0;
+	}
+
+.animal {
+	width: 100%;
+	max-width: 360px;
+	}
+
+/* --- ABOUT & LESSONS PAGE HEADER BANNER --- */
+.aboutlesson-header {
+	height: 80px;
+	padding-left: 20px;
+	}
+
+.aboutlesson-header h2 {
+	font-size: 36px;
+	}
+
+/* --- ABOUT: ORIGAMI MASTERS --- */
+.origami-masters {
+	padding: 30px 16px;
+	}
+
+.title-about {
+	font-size: 16px;
+	letter-spacing: 0.1cm;
+	}
+
+.origami-masters-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	}
+
+.origami-masters-container .master {
+	width: 100%;
+	}
+
+.master img {
+	width: 180px;
+	height: 180px;
+	}
+
+.master-name {
+	font-size: 16px;
+	}
+
+/* --- ABOUT: SCHOOL MASTERS --- */
+.school-masters {
+	padding: 30px 16px;
+	}
+
+.masters-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	margin-top: 20px;
+	}
+
+.featured-master {
+	flex: none;
+	width: 100%;
+	margin-right: 0;
+	}
+
+.featured-master img {
+	width: 100%;
+	border-radius: 10px;
+	}
+
+.featured-master h3 {
+	font-size: 18px;
+	}
+
+.masters-grid {
+	flex: none;
+	width: 100%;
+	justify-content: center;
+	gap: 16px;
+	}
+
+.master-card {
+	flex: 0 0 calc(50% - 8px);
+	}
+
+.master-card img {
+	width: 110px;
+	height: 110px;
+	}
+
+.master-card h4 {
+	font-size: 16px;
+	}
+
+.master-card span {
+	font-size: 13px;
+	}
+
+/* --- LESSONS PAGE: LESSON CARDS --- */
+#title-masterclasses {
+	flex-wrap: wrap;
+	justify-self: center;
+	width: 70%;
+}
+
+#video-title {
+	width: 100%;
+	font-size: 16px;
+	letter-spacing: 0.1cm;
+}
+
+.page-lessons {
+	padding: 30px 16px;
+	}
+
+.card-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 10px 0;
+	}
+
+.animal-lesson {
+	width: 100%;
+	max-width: 360px;
+	margin-right: 0;
+	}
+
+.enroll-lesson {
+	font-size: 16px;
+	padding: 10px 14px;
+	align-self: stretch;
+	text-align: center;
+	}
+
+/* --- LESSONS PAGE: VIDEO SECTION --- */
+.video-lessons-container {
+	padding: 30px 16px;
+	}
+
+.video-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	}
+
+.video-card {
+	width: 100%;
+	max-width: 360px;
+	}
+
+.video-card iframe {
+	height: 180px;
+	}
+
+.video-card h3 {
+	font-size: 16px;
+	}
+
+/* --- CONTACT PAGE: MAP --- */
+.map-section {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	}
+
+.map-section iframe {
+	height: 300px;
+	width: 100%;
+	display: block;
+	border: none;
+	}
+
+.contact-body {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 16px;
+	gap: 40px;
+	}
+
+.contact-form-wrap {
+	width: 100%;
+	}
+
+.form-row {
+	flex-direction: column;
+	gap: 4px;
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	margin-bottom: 12px;
+	}
+
+.form-row > label:first-child {
+	width: 100%;
+	padding-top: 0;
+	font-weight: 400;
+	font-size: 15px;
+	margin-bottom: 2px;
+	background-color: transparent;
+	}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="number"],
+.form-row select,
+.form-row textarea {
+	width: 100%;
+	max-width: 100%;
+	background-color: #eeebe6;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 8px 10px;
+	font-size: 15px;
+	}
+
+.form-row select {
+	max-width: 100%;
+	background-color: #eeebe6;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	}
+
+.radio-group,
+.checkbox-group {
+	gap: 6px;
+	}
+
+.radio-group label,
+.checkbox-group label {
+	font-size: 15px;
+	}
+
+.btn-send {
+	margin-left: 0;
+	width: 100%;
+	}
+
+.hq-wrap {
+	width: 100%;
+	text-align: center;
+	}
+
+.hq-info-row {
+	justify-content: center;
+	}
+
+.social-icons {
+	justify-content: center;
+	}
+
+/* --- FOOTER --- */
+footer {
+	padding: 20px 16px;
+	}
+
+.footer-container {
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	text-align: center;
+	}
+
+.footer-left {
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	}
+
+.footer-logo {
+	height: 36px;
+	}
+
+#details {
+	font-size: 12px;
+	text-align: center;
+	}
+
+}
